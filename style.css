@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  animation-name: show;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container .header-main {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
